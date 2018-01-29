@@ -1,0 +1,39 @@
+#content{
+	text-align: center;
+	padding-top: 3%;
+	font-family: Lato;
+}
+
+.input-group{
+	padding: 1%;
+	width: 500px;
+	margin: auto;
+	color: white;
+}
+
+h1{
+	font-weight: 800;
+	font-size: 3em;
+	color: white;
+}
+
+h4{
+	color: white;
+}
+
+form{
+		text-align: center;
+		padding-top: 2%;
+		font-family: Lato;
+}
+
+body{
+	background: url(../car2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+html{
+	height: 100%;
+}
+

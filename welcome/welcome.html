@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Welcome</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="welcomemap.css">
+	<script src="https://use.fontawesome.com/f07ad5a531.js"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Smart Parking</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><a href="../index.html">Home</a></li>
+      	<li><a href="">About</a></li>
+      	<li><a href="">Contact</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../logout/logged out.html">Logout	<i class="fa fa-user" aria-hidden="true"></i></a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="content">
+				<h1>Welcome</h1>
+				<hr>
+				<h3>Please choose your required parking spot</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row-lg-12">
+	<div class="col-lg-7">
+		<div id=map_container>
+				<div id="map_wrapper">
+	    		<div id="map_canvas" class="mapping"></div>
+				</div>
+		</div>
+	</div>
+	<div class="col-lg-5">
+		<h2>Choose from here</h2>
+		<hr>
+		<div id="options">
+			<ul class="nav nav-pills nav-stacked change_colour">
+			  <li role="presentation"><a href="#"> <span class="badge">14</span> 4th Street Garage, San jose</a></li>
+			  <li role="presentation"><a href="#"> <span class="badge">28</span> Second and San Carlos Street Garage</a></li>
+			  <li role="presentation"><a href="#"> <span class="badge">6</span> ParkSJ: Almaden/Balbach Lot</a></li>
+			  <li role="presentation"><a href="#"> <span class="badge">30</span> Impark (Parking)</a></li>
+			  </br>
+			  <button onclick="clickfunc()" type="submit" class="btn btn-default btn-lg"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Confirm booking</button>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- 	<div id=map_container>
+	<div id="map" style="width: 70%; height: 400px";></div>
+	</div>
+
+	<script type="text/javascript">
+		
+		function myMap()
+		{
+			var myCenter = new google.maps.LatLng(37.335187,-121.881072);
+			var mapCanvas = document.getElementById("map");
+			var mapOptions = {
+				center: myCenter,
+				Zoom: 13,
+			};
+		var map = new google.maps.Map(mapCanvas,mapOptions);
+		var marker = new google.maps.Marker({position:myCenter,animation:google.maps.Animation.BOUNCE});
+		marker.setMap(map);
+		}
+	</script> -->
+<script type="text/javascript" src="mymap.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

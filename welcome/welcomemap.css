@@ -1,0 +1,66 @@
+
+body{
+	background: url(../car5.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+}
+
+
+#map_container{
+	padding-top: 1%;
+	/*padding-left: 2%;*/
+}
+
+
+html{
+	height: 100%;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 5em;
+	color: white;
+	text-align: center;
+}
+
+h3{
+	color: white;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-weight: 500;
+	font-size: 3em;
+ }
+
+hr{
+	width: 400px;
+}
+
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    /*width: 60%;*/
+    height: 100%;
+}
+
+#options{
+	padding-top: 1%;
+	text-align: center;
+	font-size: 2em;
+}
+
+.nav-pills > li > a{
+	color:white;
+}
+
+ .nav-pills > li> a:hover, .nav-pills > li > a:focus {
+    color:red;
+    /*background-color:#fcd900;*/
+    }
